@@ -1,0 +1,1201 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16B180D7DBFA35229405E9F9 /* Pods_FKLTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F64A9C1CBDD46733A91DD95 /* Pods_FKLTVUITests.framework */; };
+		5BB4997E864D93DB485A6F7E /* Pods_FKLTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB627C4F214441548DDF8B6B /* Pods_FKLTV.framework */; };
+		83BE44C5C257B12A65E42461 /* Pods_FKLTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF95DFEBF1D689A335F8FA3 /* Pods_FKLTVTests.framework */; };
+		BC16FC491ED33CEC00A8A4FB /* FKLSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC16FC421ED33CEC00A8A4FB /* FKLSocket.swift */; };
+		BC16FC4A1ED33CEC00A8A4FB /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC16FC441ED33CEC00A8A4FB /* ysocket.swift */; };
+		BC16FC4B1ED33CEC00A8A4FB /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = BC16FC451ED33CEC00A8A4FB /* ytcpsocket.c */; };
+		BC16FC4C1ED33CEC00A8A4FB /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC16FC461ED33CEC00A8A4FB /* ytcpsocket.swift */; };
+		BC16FC4D1ED33CEC00A8A4FB /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = BC16FC471ED33CEC00A8A4FB /* yudpsocket.c */; };
+		BC16FC4E1ED33CEC00A8A4FB /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC16FC481ED33CEC00A8A4FB /* yudpsocket.swift */; };
+		BC16FC501ED3403E00A8A4FB /* Immessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC16FC4F1ED3403E00A8A4FB /* Immessage.proto.swift */; };
+		BC1F5BBB1ED5D8AD00B07F3E /* AttrStringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F5BBA1ED5D8AD00B07F3E /* AttrStringGenerator.swift */; };
+		BC24A57D1ED86BC90034745F /* GifImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24A57C1ED86BC90034745F /* GifImageGenerator.swift */; };
+		BC2CD28B1ECFE29800FC64D9 /* ChatToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CD28A1ECFE29800FC64D9 /* ChatToolsView.swift */; };
+		BC2CD28D1ECFFA0000FC64D9 /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CD28C1ECFFA0000FC64D9 /* EmoticonView.swift */; };
+		BC2CD2901ED00B7600FC64D9 /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC2CD28E1ED00B7600FC64D9 /* QHNormalEmotionSort.plist */; };
+		BC2CD2911ED00B7600FC64D9 /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC2CD28F1ED00B7600FC64D9 /* QHSohuGifSort.plist */; };
+		BC2CD2941ED00C1E00FC64D9 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CD2931ED00C1E00FC64D9 /* Emoticon.swift */; };
+		BC2CD2961ED00C6600FC64D9 /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CD2951ED00C6600FC64D9 /* EmoticonPackage.swift */; };
+		BC2CD2991ED00D7000FC64D9 /* EmoticonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CD2981ED00D7000FC64D9 /* EmoticonViewModel.swift */; };
+		BC2CD29B1ED00F8A00FC64D9 /* EmoticonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CD29A1ED00F8A00FC64D9 /* EmoticonViewCell.swift */; };
+		BC2CD29E1ED04A1300FC64D9 /* GiftListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CD29D1ED04A1300FC64D9 /* GiftListView.swift */; };
+		BC2CD2A01ED04DF500FC64D9 /* GiftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CD29F1ED04DF500FC64D9 /* GiftViewModel.swift */; };
+		BC2CD2A21ED0518E00FC64D9 /* GiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CD2A11ED0518E00FC64D9 /* GiftModel.swift */; };
+		BC2CD2A41ED051B600FC64D9 /* GiftPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CD2A31ED051B600FC64D9 /* GiftPackage.swift */; };
+		BC2CD2A61ED0549500FC64D9 /* GiftViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CD2A51ED0549500FC64D9 /* GiftViewCell.swift */; };
+		BC2CD2A81ED0916100FC64D9 /* KingFisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CD2A71ED0916100FC64D9 /* KingFisherExtension.swift */; };
+		BC34458D1EDD30B600B83818 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC34458C1EDD30B600B83818 /* IJKMediaFramework.framework */; };
+		BC34458F1EDD37C900B83818 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC34458E1EDD37C900B83818 /* libz.tbd */; };
+		BC7150CD1ED66078009088AA /* FKLGiftContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7150CC1ED66078009088AA /* FKLGiftContainerView.swift */; };
+		BC7150CF1ED6608A009088AA /* FKLGiftChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7150CE1ED6608A009088AA /* FKLGiftChannelView.swift */; };
+		BC7150D11ED660A9009088AA /* FKLGiftDigitLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7150D01ED660A9009088AA /* FKLGiftDigitLabel.swift */; };
+		BC7150D31ED66C72009088AA /* FKLGiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7150D21ED66C72009088AA /* FKLGiftModel.swift */; };
+		BC7A5BB91ECB36EE0000BCA5 /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5BB81ECB36EE0000BCA5 /* Emitterable.swift */; };
+		BC7A5BBB1ECB47930000BCA5 /* FKLPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5BBA1ECB47930000BCA5 /* FKLPageCollectionView.swift */; };
+		BC7A5BBD1ECB506F0000BCA5 /* FKLPageCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A5BBC1ECB506F0000BCA5 /* FKLPageCollectionViewLayout.swift */; };
+		BC8C50621EC7F00900281EBF /* FKLWaterFallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C50611EC7F00900281EBF /* FKLWaterFallLayout.swift */; };
+		BC8C50651EC8033D00281EBF /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC8C50641EC8033D00281EBF /* types.plist */; };
+		BC8C50691EC803CF00281EBF /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C50681EC803CF00281EBF /* BaseModel.swift */; };
+		BC8C506B1EC8044300281EBF /* HomeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C506A1EC8044300281EBF /* HomeType.swift */; };
+		BC8C506D1EC8047E00281EBF /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C506C1EC8047E00281EBF /* AnchorModel.swift */; };
+		BC8C506F1EC8067600281EBF /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C506E1EC8067600281EBF /* AnchorViewController.swift */; };
+		BC8C50721EC8072C00281EBF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C50711EC8072C00281EBF /* HomeViewModel.swift */; };
+		BC8C50751EC80C9A00281EBF /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C50741EC80C9A00281EBF /* Const.swift */; };
+		BC8C50781EC80EB600281EBF /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C50771EC80EB600281EBF /* NetworkTools.swift */; };
+		BC8C507C1EC82CCD00281EBF /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8C507B1EC82CCD00281EBF /* RoomViewController.swift */; };
+		BCA262741EBF18F6002E3B3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262731EBF18F6002E3B3E /* AppDelegate.swift */; };
+		BCA262761EBF18F6002E3B3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262751EBF18F6002E3B3E /* ViewController.swift */; };
+		BCA2627B1EBF18F6002E3B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA2627A1EBF18F6002E3B3E /* Assets.xcassets */; };
+		BCA262891EBF18F7002E3B3E /* FKLTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262881EBF18F7002E3B3E /* FKLTVTests.swift */; };
+		BCA262941EBF18F7002E3B3E /* FKLTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262931EBF18F7002E3B3E /* FKLTVUITests.swift */; };
+		BCA262B71EBF1A1D002E3B3E /* MainViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262B61EBF1A1D002E3B3E /* MainViewViewController.swift */; };
+		BCA262BD1EBF1AD9002E3B3E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262BC1EBF1AD9002E3B3E /* HomeViewController.swift */; };
+		BCA262BF1EBF1AE4002E3B3E /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262BE1EBF1AE4002E3B3E /* RankViewController.swift */; };
+		BCA262C11EBF1AEE002E3B3E /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262C01EBF1AEE002E3B3E /* DiscoverViewController.swift */; };
+		BCA262C31EBF1AF7002E3B3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262C21EBF1AF7002E3B3E /* ProfileViewController.swift */; };
+		BCA262C51EBF1DC4002E3B3E /* FKLNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262C41EBF1DC4002E3B3E /* FKLNavigationController.swift */; };
+		BCA262CA1EBF302C002E3B3E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262C91EBF302C002E3B3E /* UIColor+Extension.swift */; };
+		BCA262CE1EBF3B09002E3B3E /* FKLPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262CD1EBF3B09002E3B3E /* FKLPageView.swift */; };
+		BCA262D01EBF3B3D002E3B3E /* FKLTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262CF1EBF3B3D002E3B3E /* FKLTitleView.swift */; };
+		BCA262D21EBF3B56002E3B3E /* FKLContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262D11EBF3B56002E3B3E /* FKLContentView.swift */; };
+		BCA262D41EBF6411002E3B3E /* FKLTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA262D31EBF6411002E3B3E /* FKLTitleStyle.swift */; };
+		BCC47EF81ED467E300F02C41 /* ChatContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC47EF71ED467E300F02C41 /* ChatContentView.swift */; };
+		BCC47EFA1ED477CB00F02C41 /* ChatContentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC47EF91ED477CB00F02C41 /* ChatContentViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCA262851EBF18F7002E3B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA262681EBF18F6002E3B3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCA2626F1EBF18F6002E3B3E;
+			remoteInfo = FKLTV;
+		};
+		BCA262901EBF18F7002E3B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA262681EBF18F6002E3B3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCA2626F1EBF18F6002E3B3E;
+			remoteInfo = FKLTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FF95DFEBF1D689A335F8FA3 /* Pods_FKLTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FKLTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3180F6C2D392796661662A4B /* Pods-FKLTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FKLTVUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FKLTVUITests/Pods-FKLTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		41558683DED03AADD5D72D73 /* Pods-FKLTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FKLTVUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FKLTVUITests/Pods-FKLTVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		57208F008CA3BE4418D1A4FD /* Pods-FKLTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FKLTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FKLTVTests/Pods-FKLTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F64A9C1CBDD46733A91DD95 /* Pods_FKLTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FKLTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C64C9DCDC3F9524C11BC456 /* Pods-FKLTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FKLTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-FKLTV/Pods-FKLTV.release.xcconfig"; sourceTree = "<group>"; };
+		BC16FC421ED33CEC00A8A4FB /* FKLSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKLSocket.swift; sourceTree = "<group>"; };
+		BC16FC441ED33CEC00A8A4FB /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
+		BC16FC451ED33CEC00A8A4FB /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
+		BC16FC461ED33CEC00A8A4FB /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
+		BC16FC471ED33CEC00A8A4FB /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
+		BC16FC481ED33CEC00A8A4FB /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
+		BC16FC4F1ED3403E00A8A4FB /* Immessage.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Immessage.proto.swift; sourceTree = "<group>"; };
+		BC1F5BBA1ED5D8AD00B07F3E /* AttrStringGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttrStringGenerator.swift; sourceTree = "<group>"; };
+		BC24A57C1ED86BC90034745F /* GifImageGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifImageGenerator.swift; sourceTree = "<group>"; };
+		BC2CD28A1ECFE29800FC64D9 /* ChatToolsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatToolsView.swift; sourceTree = "<group>"; };
+		BC2CD28C1ECFFA0000FC64D9 /* EmoticonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
+		BC2CD28E1ED00B7600FC64D9 /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
+		BC2CD28F1ED00B7600FC64D9 /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
+		BC2CD2931ED00C1E00FC64D9 /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
+		BC2CD2951ED00C6600FC64D9 /* EmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
+		BC2CD2981ED00D7000FC64D9 /* EmoticonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewModel.swift; sourceTree = "<group>"; };
+		BC2CD29A1ED00F8A00FC64D9 /* EmoticonViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonViewCell.swift; sourceTree = "<group>"; };
+		BC2CD29D1ED04A1300FC64D9 /* GiftListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftListView.swift; sourceTree = "<group>"; };
+		BC2CD29F1ED04DF500FC64D9 /* GiftViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewModel.swift; sourceTree = "<group>"; };
+		BC2CD2A11ED0518E00FC64D9 /* GiftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftModel.swift; sourceTree = "<group>"; };
+		BC2CD2A31ED051B600FC64D9 /* GiftPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftPackage.swift; sourceTree = "<group>"; };
+		BC2CD2A51ED0549500FC64D9 /* GiftViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewCell.swift; sourceTree = "<group>"; };
+		BC2CD2A71ED0916100FC64D9 /* KingFisherExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingFisherExtension.swift; sourceTree = "<group>"; };
+		BC34458C1EDD30B600B83818 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		BC34458E1EDD37C900B83818 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BC7150CC1ED66078009088AA /* FKLGiftContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKLGiftContainerView.swift; sourceTree = "<group>"; };
+		BC7150CE1ED6608A009088AA /* FKLGiftChannelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKLGiftChannelView.swift; sourceTree = "<group>"; };
+		BC7150D01ED660A9009088AA /* FKLGiftDigitLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKLGiftDigitLabel.swift; sourceTree = "<group>"; };
+		BC7150D21ED66C72009088AA /* FKLGiftModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKLGiftModel.swift; sourceTree = "<group>"; };
+		BC7A5BB81ECB36EE0000BCA5 /* Emitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
+		BC7A5BBA1ECB47930000BCA5 /* FKLPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKLPageCollectionView.swift; sourceTree = "<group>"; };
+		BC7A5BBC1ECB506F0000BCA5 /* FKLPageCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKLPageCollectionViewLayout.swift; sourceTree = "<group>"; };
+		BC8C50611EC7F00900281EBF /* FKLWaterFallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKLWaterFallLayout.swift; sourceTree = "<group>"; };
+		BC8C50641EC8033D00281EBF /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
+		BC8C50681EC803CF00281EBF /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		BC8C506A1EC8044300281EBF /* HomeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeType.swift; sourceTree = "<group>"; };
+		BC8C506C1EC8047E00281EBF /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		BC8C506E1EC8067600281EBF /* AnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
+		BC8C50711EC8072C00281EBF /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BC8C50741EC80C9A00281EBF /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		BC8C50771EC80EB600281EBF /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		BC8C507B1EC82CCD00281EBF /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		BCA262701EBF18F6002E3B3E /* FKLTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FKLTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA262731EBF18F6002E3B3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCA262751EBF18F6002E3B3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCA2627A1EBF18F6002E3B3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCA2627F1EBF18F6002E3B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA262841EBF18F7002E3B3E /* FKLTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FKLTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA262881EBF18F7002E3B3E /* FKLTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FKLTVTests.swift; sourceTree = "<group>"; };
+		BCA2628A1EBF18F7002E3B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA2628F1EBF18F7002E3B3E /* FKLTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FKLTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA262931EBF18F7002E3B3E /* FKLTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FKLTVUITests.swift; sourceTree = "<group>"; };
+		BCA262951EBF18F7002E3B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA262B61EBF1A1D002E3B3E /* MainViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewViewController.swift; sourceTree = "<group>"; };
+		BCA262BC1EBF1AD9002E3B3E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BCA262BE1EBF1AE4002E3B3E /* RankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		BCA262C01EBF1AEE002E3B3E /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		BCA262C21EBF1AF7002E3B3E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BCA262C41EBF1DC4002E3B3E /* FKLNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKLNavigationController.swift; sourceTree = "<group>"; };
+		BCA262C91EBF302C002E3B3E /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		BCA262CD1EBF3B09002E3B3E /* FKLPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKLPageView.swift; sourceTree = "<group>"; };
+		BCA262CF1EBF3B3D002E3B3E /* FKLTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKLTitleView.swift; sourceTree = "<group>"; };
+		BCA262D11EBF3B56002E3B3E /* FKLContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKLContentView.swift; sourceTree = "<group>"; };
+		BCA262D31EBF6411002E3B3E /* FKLTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKLTitleStyle.swift; sourceTree = "<group>"; };
+		BCC47EF71ED467E300F02C41 /* ChatContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContentView.swift; sourceTree = "<group>"; };
+		BCC47EF91ED477CB00F02C41 /* ChatContentViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContentViewCell.swift; sourceTree = "<group>"; };
+		BF2C269DF68E5C63A9685BA9 /* Pods-FKLTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FKLTVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FKLTVTests/Pods-FKLTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6B92C19F51128EC523EFD30 /* Pods-FKLTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FKLTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FKLTV/Pods-FKLTV.debug.xcconfig"; sourceTree = "<group>"; };
+		FB627C4F214441548DDF8B6B /* Pods_FKLTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FKLTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCA2626D1EBF18F6002E3B3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC34458F1EDD37C900B83818 /* libz.tbd in Frameworks */,
+				5BB4997E864D93DB485A6F7E /* Pods_FKLTV.framework in Frameworks */,
+				BC34458D1EDD30B600B83818 /* IJKMediaFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA262811EBF18F7002E3B3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BE44C5C257B12A65E42461 /* Pods_FKLTVTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA2628C1EBF18F7002E3B3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B180D7DBFA35229405E9F9 /* Pods_FKLTVUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F8A9589081F6E0CC9A4A9EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6B92C19F51128EC523EFD30 /* Pods-FKLTV.debug.xcconfig */,
+				9C64C9DCDC3F9524C11BC456 /* Pods-FKLTV.release.xcconfig */,
+				BF2C269DF68E5C63A9685BA9 /* Pods-FKLTVTests.debug.xcconfig */,
+				57208F008CA3BE4418D1A4FD /* Pods-FKLTVTests.release.xcconfig */,
+				3180F6C2D392796661662A4B /* Pods-FKLTVUITests.debug.xcconfig */,
+				41558683DED03AADD5D72D73 /* Pods-FKLTVUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4FF374A0E08870E66C1334F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC34458E1EDD37C900B83818 /* libz.tbd */,
+				FB627C4F214441548DDF8B6B /* Pods_FKLTV.framework */,
+				0FF95DFEBF1D689A335F8FA3 /* Pods_FKLTVTests.framework */,
+				6F64A9C1CBDD46733A91DD95 /* Pods_FKLTVUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC16FC411ED33CEC00A8A4FB /* FKLSocket */ = {
+			isa = PBXGroup;
+			children = (
+				BC16FC4F1ED3403E00A8A4FB /* Immessage.proto.swift */,
+				BC16FC421ED33CEC00A8A4FB /* FKLSocket.swift */,
+				BC16FC431ED33CEC00A8A4FB /* ysocket */,
+			);
+			path = FKLSocket;
+			sourceTree = "<group>";
+		};
+		BC16FC431ED33CEC00A8A4FB /* ysocket */ = {
+			isa = PBXGroup;
+			children = (
+				BC16FC441ED33CEC00A8A4FB /* ysocket.swift */,
+				BC16FC451ED33CEC00A8A4FB /* ytcpsocket.c */,
+				BC16FC461ED33CEC00A8A4FB /* ytcpsocket.swift */,
+				BC16FC471ED33CEC00A8A4FB /* yudpsocket.c */,
+				BC16FC481ED33CEC00A8A4FB /* yudpsocket.swift */,
+			);
+			path = ysocket;
+			sourceTree = "<group>";
+		};
+		BC2CD2881ECFE23B00FC64D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCC47EF61ED467A800F02C41 /* ChatContentView */,
+				BC2CD29C1ED0499A00FC64D9 /* GiftView */,
+				BC2CD2891ECFE25900FC64D9 /* ChatView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC2CD2891ECFE25900FC64D9 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				BC2CD28A1ECFE29800FC64D9 /* ChatToolsView.swift */,
+				BC2CD28C1ECFFA0000FC64D9 /* EmoticonView.swift */,
+				BC2CD29A1ED00F8A00FC64D9 /* EmoticonViewCell.swift */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
+		BC2CD2921ED00BF900FC64D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC2CD2931ED00C1E00FC64D9 /* Emoticon.swift */,
+				BC2CD2951ED00C6600FC64D9 /* EmoticonPackage.swift */,
+				BC2CD2A11ED0518E00FC64D9 /* GiftModel.swift */,
+				BC2CD2A31ED051B600FC64D9 /* GiftPackage.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BC2CD2971ED00D5000FC64D9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC2CD2981ED00D7000FC64D9 /* EmoticonViewModel.swift */,
+				BC2CD29F1ED04DF500FC64D9 /* GiftViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC2CD29C1ED0499A00FC64D9 /* GiftView */ = {
+			isa = PBXGroup;
+			children = (
+				BC2CD29D1ED04A1300FC64D9 /* GiftListView.swift */,
+				BC2CD2A51ED0549500FC64D9 /* GiftViewCell.swift */,
+			);
+			name = GiftView;
+			sourceTree = "<group>";
+		};
+		BC7150CB1ED6603E009088AA /* FKLGiftAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				BC7150CC1ED66078009088AA /* FKLGiftContainerView.swift */,
+				BC7150CE1ED6608A009088AA /* FKLGiftChannelView.swift */,
+				BC7150D01ED660A9009088AA /* FKLGiftDigitLabel.swift */,
+				BC7150D21ED66C72009088AA /* FKLGiftModel.swift */,
+			);
+			name = FKLGiftAnimation;
+			sourceTree = "<group>";
+		};
+		BC7A5BB71ECB36BB0000BCA5 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BC7A5BB81ECB36EE0000BCA5 /* Emitterable.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		BC8C50601EC7EFB100281EBF /* FKLWaterFallLayout */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C50611EC7F00900281EBF /* FKLWaterFallLayout.swift */,
+			);
+			name = FKLWaterFallLayout;
+			sourceTree = "<group>";
+		};
+		BC8C50631EC8033D00281EBF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BC34458C1EDD30B600B83818 /* IJKMediaFramework.framework */,
+				BC2CD28E1ED00B7600FC64D9 /* QHNormalEmotionSort.plist */,
+				BC2CD28F1ED00B7600FC64D9 /* QHSohuGifSort.plist */,
+				BC8C50641EC8033D00281EBF /* types.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BC8C50661EC8037100281EBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C506A1EC8044300281EBF /* HomeType.swift */,
+				BC8C506C1EC8047E00281EBF /* AnchorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC8C50671EC803AF00281EBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C50681EC803CF00281EBF /* BaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC8C50701EC8070B00281EBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C50711EC8072C00281EBF /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC8C50731EC80C6D00281EBF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C50741EC80C9A00281EBF /* Const.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BC8C50761EC80E7E00281EBF /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C50771EC80EB600281EBF /* NetworkTools.swift */,
+				BC2CD2A71ED0916100FC64D9 /* KingFisherExtension.swift */,
+				BC1F5BBA1ED5D8AD00B07F3E /* AttrStringGenerator.swift */,
+				BC24A57C1ED86BC90034745F /* GifImageGenerator.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		BC8C50791EC82C8400281EBF /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				BC16FC411ED33CEC00A8A4FB /* FKLSocket */,
+				BC2CD2971ED00D5000FC64D9 /* ViewModel */,
+				BC2CD2921ED00BF900FC64D9 /* Model */,
+				BC2CD2881ECFE23B00FC64D9 /* View */,
+				BC8C507A1EC82C9D00281EBF /* Controller */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		BC8C507A1EC82C9D00281EBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C507B1EC82CCD00281EBF /* RoomViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BCA262671EBF18F6002E3B3E = {
+			isa = PBXGroup;
+			children = (
+				BCA262721EBF18F6002E3B3E /* FKLTV */,
+				BCA262871EBF18F7002E3B3E /* FKLTVTests */,
+				BCA262921EBF18F7002E3B3E /* FKLTVUITests */,
+				BCA262711EBF18F6002E3B3E /* Products */,
+				0F8A9589081F6E0CC9A4A9EC /* Pods */,
+				4FF374A0E08870E66C1334F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCA262711EBF18F6002E3B3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCA262701EBF18F6002E3B3E /* FKLTV.app */,
+				BCA262841EBF18F7002E3B3E /* FKLTVTests.xctest */,
+				BCA2628F1EBF18F7002E3B3E /* FKLTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCA262721EBF18F6002E3B3E /* FKLTV */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C50631EC8033D00281EBF /* Resource */,
+				BCA262A11EBF1917002E3B3E /* Classes */,
+				BCA262731EBF18F6002E3B3E /* AppDelegate.swift */,
+				BCA262751EBF18F6002E3B3E /* ViewController.swift */,
+				BCA2627A1EBF18F6002E3B3E /* Assets.xcassets */,
+				BCA2627F1EBF18F6002E3B3E /* Info.plist */,
+			);
+			path = FKLTV;
+			sourceTree = "<group>";
+		};
+		BCA262871EBF18F7002E3B3E /* FKLTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCA262881EBF18F7002E3B3E /* FKLTVTests.swift */,
+				BCA2628A1EBF18F7002E3B3E /* Info.plist */,
+			);
+			path = FKLTVTests;
+			sourceTree = "<group>";
+		};
+		BCA262921EBF18F7002E3B3E /* FKLTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCA262931EBF18F7002E3B3E /* FKLTVUITests.swift */,
+				BCA262951EBF18F7002E3B3E /* Info.plist */,
+			);
+			path = FKLTVUITests;
+			sourceTree = "<group>";
+		};
+		BCA262A11EBF1917002E3B3E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C50791EC82C8400281EBF /* Live */,
+				BC8C50761EC80E7E00281EBF /* Tool */,
+				BCA262AF1EBF19AC002E3B3E /* Base */,
+				BCA262B21EBF19AC002E3B3E /* Main */,
+				BCA262B11EBF19AC002E3B3E /* Home */,
+				BCA262B41EBF19AC002E3B3E /* Rank */,
+				BCA262B01EBF19AC002E3B3E /* Discover */,
+				BCA262B31EBF19AC002E3B3E /* Profile */,
+				BCA262CB1EBF3A4A002E3B3E /* Vender */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BCA262AF1EBF19AC002E3B3E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C50671EC803AF00281EBF /* Model */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BCA262B01EBF19AC002E3B3E /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				BCA262BA1EBF1AA8002E3B3E /* Controller */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		BCA262B11EBF19AC002E3B3E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BC8C50701EC8070B00281EBF /* ViewModel */,
+				BC8C50661EC8037100281EBF /* Model */,
+				BCA262B81EBF1A7E002E3B3E /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BCA262B21EBF19AC002E3B3E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BCA262C81EBF2FEF002E3B3E /* Extension */,
+				BCA262B51EBF19E2002E3B3E /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BCA262B31EBF19AC002E3B3E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BCA262BB1EBF1AB5002E3B3E /* Controller */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		BCA262B41EBF19AC002E3B3E /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+				BCA262B91EBF1A98002E3B3E /* Controller */,
+			);
+			path = Rank;
+			sourceTree = "<group>";
+		};
+		BCA262B51EBF19E2002E3B3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCA262B61EBF1A1D002E3B3E /* MainViewViewController.swift */,
+				BCA262C41EBF1DC4002E3B3E /* FKLNavigationController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BCA262B81EBF1A7E002E3B3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCA262BC1EBF1AD9002E3B3E /* HomeViewController.swift */,
+				BC8C506E1EC8067600281EBF /* AnchorViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BCA262B91EBF1A98002E3B3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCA262BE1EBF1AE4002E3B3E /* RankViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BCA262BA1EBF1AA8002E3B3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCA262C01EBF1AEE002E3B3E /* DiscoverViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BCA262BB1EBF1AB5002E3B3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCA262C21EBF1AF7002E3B3E /* ProfileViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BCA262C81EBF2FEF002E3B3E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BCA262C91EBF302C002E3B3E /* UIColor+Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		BCA262CB1EBF3A4A002E3B3E /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				BC7150CB1ED6603E009088AA /* FKLGiftAnimation */,
+				BC7A5BB71ECB36BB0000BCA5 /* Protocol */,
+				BC8C50731EC80C6D00281EBF /* Common */,
+				BC8C50601EC7EFB100281EBF /* FKLWaterFallLayout */,
+				BCA262CC1EBF3A72002E3B3E /* FKLPageView */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		BCA262CC1EBF3A72002E3B3E /* FKLPageView */ = {
+			isa = PBXGroup;
+			children = (
+				BCA262CD1EBF3B09002E3B3E /* FKLPageView.swift */,
+				BCA262D31EBF6411002E3B3E /* FKLTitleStyle.swift */,
+				BCA262CF1EBF3B3D002E3B3E /* FKLTitleView.swift */,
+				BCA262D11EBF3B56002E3B3E /* FKLContentView.swift */,
+				BC7A5BBA1ECB47930000BCA5 /* FKLPageCollectionView.swift */,
+				BC7A5BBC1ECB506F0000BCA5 /* FKLPageCollectionViewLayout.swift */,
+			);
+			path = FKLPageView;
+			sourceTree = "<group>";
+		};
+		BCC47EF61ED467A800F02C41 /* ChatContentView */ = {
+			isa = PBXGroup;
+			children = (
+				BCC47EF71ED467E300F02C41 /* ChatContentView.swift */,
+				BCC47EF91ED477CB00F02C41 /* ChatContentViewCell.swift */,
+			);
+			name = ChatContentView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCA2626F1EBF18F6002E3B3E /* FKLTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA262981EBF18F7002E3B3E /* Build configuration list for PBXNativeTarget "FKLTV" */;
+			buildPhases = (
+				DAE7B0F25F44E62065C7A4B1 /* [CP] Check Pods Manifest.lock */,
+				BCA2626C1EBF18F6002E3B3E /* Sources */,
+				BCA2626D1EBF18F6002E3B3E /* Frameworks */,
+				BCA2626E1EBF18F6002E3B3E /* Resources */,
+				9ABA6F9604FCCA10FBE42750 /* [CP] Embed Pods Frameworks */,
+				DBF5B73552BB201DDB85BDF4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FKLTV;
+			productName = FKLTV;
+			productReference = BCA262701EBF18F6002E3B3E /* FKLTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCA262831EBF18F7002E3B3E /* FKLTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA2629B1EBF18F7002E3B3E /* Build configuration list for PBXNativeTarget "FKLTVTests" */;
+			buildPhases = (
+				7168005A972B6EFCCBBBE143 /* [CP] Check Pods Manifest.lock */,
+				BCA262801EBF18F7002E3B3E /* Sources */,
+				BCA262811EBF18F7002E3B3E /* Frameworks */,
+				BCA262821EBF18F7002E3B3E /* Resources */,
+				62472CFB7F80FBE547B4263A /* [CP] Embed Pods Frameworks */,
+				0E4A0D0D0ACF6B1D5AB50251 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCA262861EBF18F7002E3B3E /* PBXTargetDependency */,
+			);
+			name = FKLTVTests;
+			productName = FKLTVTests;
+			productReference = BCA262841EBF18F7002E3B3E /* FKLTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCA2628E1EBF18F7002E3B3E /* FKLTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA2629E1EBF18F7002E3B3E /* Build configuration list for PBXNativeTarget "FKLTVUITests" */;
+			buildPhases = (
+				E9078FB8E855F1E149CD6EEE /* [CP] Check Pods Manifest.lock */,
+				BCA2628B1EBF18F7002E3B3E /* Sources */,
+				BCA2628C1EBF18F7002E3B3E /* Frameworks */,
+				BCA2628D1EBF18F7002E3B3E /* Resources */,
+				527E23313B9A750F127E7EA9 /* [CP] Embed Pods Frameworks */,
+				3F4B02F4FF251D07C3EE5EFB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCA262911EBF18F7002E3B3E /* PBXTargetDependency */,
+			);
+			name = FKLTVUITests;
+			productName = FKLTVUITests;
+			productReference = BCA2628F1EBF18F7002E3B3E /* FKLTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCA262681EBF18F6002E3B3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = kun;
+				TargetAttributes = {
+					BCA2626F1EBF18F6002E3B3E = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					BCA262831EBF18F7002E3B3E = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BCA2626F1EBF18F6002E3B3E;
+					};
+					BCA2628E1EBF18F7002E3B3E = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BCA2626F1EBF18F6002E3B3E;
+					};
+				};
+			};
+			buildConfigurationList = BCA2626B1EBF18F6002E3B3E /* Build configuration list for PBXProject "FKLTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCA262671EBF18F6002E3B3E;
+			productRefGroup = BCA262711EBF18F6002E3B3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCA2626F1EBF18F6002E3B3E /* FKLTV */,
+				BCA262831EBF18F7002E3B3E /* FKLTVTests */,
+				BCA2628E1EBF18F7002E3B3E /* FKLTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCA2626E1EBF18F6002E3B3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8C50651EC8033D00281EBF /* types.plist in Resources */,
+				BCA2627B1EBF18F6002E3B3E /* Assets.xcassets in Resources */,
+				BC2CD2901ED00B7600FC64D9 /* QHNormalEmotionSort.plist in Resources */,
+				BC2CD2911ED00B7600FC64D9 /* QHSohuGifSort.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA262821EBF18F7002E3B3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA2628D1EBF18F7002E3B3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E4A0D0D0ACF6B1D5AB50251 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FKLTVTests/Pods-FKLTVTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F4B02F4FF251D07C3EE5EFB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FKLTVUITests/Pods-FKLTVUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		527E23313B9A750F127E7EA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FKLTVUITests/Pods-FKLTVUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62472CFB7F80FBE547B4263A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FKLTVTests/Pods-FKLTVTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7168005A972B6EFCCBBBE143 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9ABA6F9604FCCA10FBE42750 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FKLTV/Pods-FKLTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE7B0F25F44E62065C7A4B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF5B73552BB201DDB85BDF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FKLTV/Pods-FKLTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9078FB8E855F1E149CD6EEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCA2626C1EBF18F6002E3B3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC47EFA1ED477CB00F02C41 /* ChatContentViewCell.swift in Sources */,
+				BC16FC4A1ED33CEC00A8A4FB /* ysocket.swift in Sources */,
+				BC8C50721EC8072C00281EBF /* HomeViewModel.swift in Sources */,
+				BCA262BF1EBF1AE4002E3B3E /* RankViewController.swift in Sources */,
+				BC1F5BBB1ED5D8AD00B07F3E /* AttrStringGenerator.swift in Sources */,
+				BCA262C51EBF1DC4002E3B3E /* FKLNavigationController.swift in Sources */,
+				BC2CD2A21ED0518E00FC64D9 /* GiftModel.swift in Sources */,
+				BCA262D21EBF3B56002E3B3E /* FKLContentView.swift in Sources */,
+				BC8C506F1EC8067600281EBF /* AnchorViewController.swift in Sources */,
+				BC2CD2A01ED04DF500FC64D9 /* GiftViewModel.swift in Sources */,
+				BC7150CD1ED66078009088AA /* FKLGiftContainerView.swift in Sources */,
+				BCA262D01EBF3B3D002E3B3E /* FKLTitleView.swift in Sources */,
+				BC7150D11ED660A9009088AA /* FKLGiftDigitLabel.swift in Sources */,
+				BC16FC501ED3403E00A8A4FB /* Immessage.proto.swift in Sources */,
+				BC16FC491ED33CEC00A8A4FB /* FKLSocket.swift in Sources */,
+				BC8C506B1EC8044300281EBF /* HomeType.swift in Sources */,
+				BC2CD2961ED00C6600FC64D9 /* EmoticonPackage.swift in Sources */,
+				BCC47EF81ED467E300F02C41 /* ChatContentView.swift in Sources */,
+				BC7A5BBB1ECB47930000BCA5 /* FKLPageCollectionView.swift in Sources */,
+				BCA262761EBF18F6002E3B3E /* ViewController.swift in Sources */,
+				BC16FC4B1ED33CEC00A8A4FB /* ytcpsocket.c in Sources */,
+				BC2CD2991ED00D7000FC64D9 /* EmoticonViewModel.swift in Sources */,
+				BC7A5BBD1ECB506F0000BCA5 /* FKLPageCollectionViewLayout.swift in Sources */,
+				BCA262CA1EBF302C002E3B3E /* UIColor+Extension.swift in Sources */,
+				BC2CD29B1ED00F8A00FC64D9 /* EmoticonViewCell.swift in Sources */,
+				BC2CD29E1ED04A1300FC64D9 /* GiftListView.swift in Sources */,
+				BC16FC4D1ED33CEC00A8A4FB /* yudpsocket.c in Sources */,
+				BC16FC4E1ED33CEC00A8A4FB /* yudpsocket.swift in Sources */,
+				BC8C50751EC80C9A00281EBF /* Const.swift in Sources */,
+				BC2CD2A61ED0549500FC64D9 /* GiftViewCell.swift in Sources */,
+				BC24A57D1ED86BC90034745F /* GifImageGenerator.swift in Sources */,
+				BC8C50621EC7F00900281EBF /* FKLWaterFallLayout.swift in Sources */,
+				BC2CD28D1ECFFA0000FC64D9 /* EmoticonView.swift in Sources */,
+				BCA262D41EBF6411002E3B3E /* FKLTitleStyle.swift in Sources */,
+				BC16FC4C1ED33CEC00A8A4FB /* ytcpsocket.swift in Sources */,
+				BC7150CF1ED6608A009088AA /* FKLGiftChannelView.swift in Sources */,
+				BC2CD2A81ED0916100FC64D9 /* KingFisherExtension.swift in Sources */,
+				BCA262B71EBF1A1D002E3B3E /* MainViewViewController.swift in Sources */,
+				BC8C50691EC803CF00281EBF /* BaseModel.swift in Sources */,
+				BC8C50781EC80EB600281EBF /* NetworkTools.swift in Sources */,
+				BCA262CE1EBF3B09002E3B3E /* FKLPageView.swift in Sources */,
+				BC2CD28B1ECFE29800FC64D9 /* ChatToolsView.swift in Sources */,
+				BCA262C11EBF1AEE002E3B3E /* DiscoverViewController.swift in Sources */,
+				BC8C507C1EC82CCD00281EBF /* RoomViewController.swift in Sources */,
+				BCA262C31EBF1AF7002E3B3E /* ProfileViewController.swift in Sources */,
+				BC7150D31ED66C72009088AA /* FKLGiftModel.swift in Sources */,
+				BC7A5BB91ECB36EE0000BCA5 /* Emitterable.swift in Sources */,
+				BCA262741EBF18F6002E3B3E /* AppDelegate.swift in Sources */,
+				BCA262BD1EBF1AD9002E3B3E /* HomeViewController.swift in Sources */,
+				BC8C506D1EC8047E00281EBF /* AnchorModel.swift in Sources */,
+				BC2CD2A41ED051B600FC64D9 /* GiftPackage.swift in Sources */,
+				BC2CD2941ED00C1E00FC64D9 /* Emoticon.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA262801EBF18F7002E3B3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA262891EBF18F7002E3B3E /* FKLTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA2628B1EBF18F7002E3B3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA262941EBF18F7002E3B3E /* FKLTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCA262861EBF18F7002E3B3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCA2626F1EBF18F6002E3B3E /* FKLTV */;
+			targetProxy = BCA262851EBF18F7002E3B3E /* PBXContainerItemProxy */;
+		};
+		BCA262911EBF18F7002E3B3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCA2626F1EBF18F6002E3B3E /* FKLTV */;
+			targetProxy = BCA262901EBF18F7002E3B3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BCA262961EBF18F7002E3B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCA262971EBF18F7002E3B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCA262991EBF18F7002E3B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6B92C19F51128EC523EFD30 /* Pods-FKLTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FKLTV/Resource",
+				);
+				INFOPLIST_FILE = FKLTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fkunlam.www.FKLTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BCA2629A1EBF18F7002E3B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C64C9DCDC3F9524C11BC456 /* Pods-FKLTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FKLTV/Resource",
+				);
+				INFOPLIST_FILE = FKLTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fkunlam.www.FKLTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BCA2629C1EBF18F7002E3B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2C269DF68E5C63A9685BA9 /* Pods-FKLTVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FKLTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fkunlam.www.FKLTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FKLTV.app/FKLTV";
+			};
+			name = Debug;
+		};
+		BCA2629D1EBF18F7002E3B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57208F008CA3BE4418D1A4FD /* Pods-FKLTVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FKLTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fkunlam.www.FKLTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FKLTV.app/FKLTV";
+			};
+			name = Release;
+		};
+		BCA2629F1EBF18F7002E3B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3180F6C2D392796661662A4B /* Pods-FKLTVUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FKLTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fkunlam.www.FKLTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FKLTV;
+			};
+			name = Debug;
+		};
+		BCA262A01EBF18F7002E3B3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41558683DED03AADD5D72D73 /* Pods-FKLTVUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FKLTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fkunlam.www.FKLTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FKLTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCA2626B1EBF18F6002E3B3E /* Build configuration list for PBXProject "FKLTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA262961EBF18F7002E3B3E /* Debug */,
+				BCA262971EBF18F7002E3B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA262981EBF18F7002E3B3E /* Build configuration list for PBXNativeTarget "FKLTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA262991EBF18F7002E3B3E /* Debug */,
+				BCA2629A1EBF18F7002E3B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA2629B1EBF18F7002E3B3E /* Build configuration list for PBXNativeTarget "FKLTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA2629C1EBF18F7002E3B3E /* Debug */,
+				BCA2629D1EBF18F7002E3B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA2629E1EBF18F7002E3B3E /* Build configuration list for PBXNativeTarget "FKLTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA2629F1EBF18F7002E3B3E /* Debug */,
+				BCA262A01EBF18F7002E3B3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCA262681EBF18F6002E3B3E /* Project object */;
+}
